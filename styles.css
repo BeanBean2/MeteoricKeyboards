@@ -1,0 +1,90 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f7fb;
+  color: #161b22;
+}
+
+.hero {
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(120deg, #1b2a52, #4f46e5);
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+}
+
+.hero p {
+  margin-top: 0.75rem;
+}
+
+.layout {
+  max-width: 980px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 1.5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+label,
+legend {
+  font-weight: 700;
+  display: block;
+  margin: 0.9rem 0 0.35rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+}
+
+fieldset {
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 0.6rem 0.8rem 0.8rem;
+}
+
+.inline-option {
+  display: block;
+  margin: 0.45rem 0;
+  font-weight: 500;
+}
+
+.total {
+  font-size: 1.2rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4338ca;
+}

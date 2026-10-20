@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meteoric Keyboards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Meteoric Keyboards</h1>
+      <p>Custom mechanical keyboards built exactly how you want them.</p>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <h2>Build Your Keyboard</h2>
+        <form id="builder-form">
+          <label for="layout">Layout</label>
+          <select id="layout" name="layout">
+            <option value="120">60% Compact — $120</option>
+            <option value="150">75% Explorer — $150</option>
+            <option value="180">TKL Nebula — $180</option>
+          </select>
+
+          <label for="switches">Switch Type</label>
+          <select id="switches" name="switches">
+            <option value="35">Linear — $35</option>
+            <option value="40">Tactile — $40</option>
+            <option value="45">Clicky — $45</option>
+          </select>
+
+          <label for="keycaps">Keycaps</label>
+          <select id="keycaps" name="keycaps">
+            <option value="25">ABS Shine — $25</option>
+            <option value="45">PBT Nova — $45</option>
+            <option value="70">Artisan Set — $70</option>
+          </select>
+
+          <label for="case">Case Finish</label>
+          <select id="case" name="case">
+            <option value="0">Standard Black — Included</option>
+            <option value="30">Anodized Silver — $30</option>
+            <option value="45">CNC Brass — $45</option>
+          </select>
+
+          <fieldset>
+            <legend>Add-ons</legend>
+            <label class="inline-option">
+              <input type="checkbox" name="addon" value="15" />
+              Wrist rest (+$15)
+            </label>
+            <label class="inline-option">
+              <input type="checkbox" name="addon" value="20" />
+              Coiled cable (+$20)
+            </label>
+            <label class="inline-option">
+              <input type="checkbox" name="addon" value="25" />
+              Sound dampening (+$25)
+            </label>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Order Summary</h2>
+        <p id="summary-text">Configure your keyboard to see your final price.</p>
+        <p class="total">Total: <strong id="total-price">$0</strong></p>
+        <button id="checkout-button" type="button">Request Purchase</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
